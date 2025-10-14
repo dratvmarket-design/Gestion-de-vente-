@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ajouter / Modifier produit</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand-text">
+        <div class="brand-title">Tata Stock Pro</div>
+        <div class="brand-sub">La gestion & facturation simple - PDG DRAMANE TRAORE</div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <h2>Ajouter / Modifier produit</h2>
+        <div class="form-row"><input id="p_name" placeholder="Nom du produit"></div>
+        <div class="form-row"><input id="p_sku" placeholder="SKU (optionnel)"></div>
+        <div class="form-row"><input id="p_price" type="number" placeholder="Prix de vente (FCFA)"></div>
+        <div class="form-row"><input id="p_cost" type="number" placeholder="Prix d'achat (FCFA)"></div>
+        <div class="form-row"><input id="p_qty" type="number" placeholder="Quantité" value="0"></div>
+        <div class="form-row">
+          <input id="p_image" type="file" accept="image/*">
+        </div>
+        <div class="form-row">
+          <button class="btn primary" onclick="addProduct()">Enregistrer produit</button>
+          <a class="btn" href="dashboard.html">Accueil</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Liste des produits</h3>
+        <div id="productList"></div>
+      </section>
+    </main>
+
+    <footer class="footer">Tata Stock Pro - Produits</footer>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
